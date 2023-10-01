@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon-pag.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>IMC |Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>O que é IMC ?</h1>
+            <p>IMC significa "Índice de Massa Corporal". É uma medida que utiliza a altura e o peso de uma pessoa para avaliar sua composição corporal e estimar se ela está dentro de uma faixa de peso saudável. O IMC é amplamente utilizado como uma ferramenta de triagem para determinar se alguém está com sobrepeso, abaixo do peso ou em um peso considerado saudável.</p>
+            <p>A fórmula é a sequinte: divide-se o peso (em kg) pelo quadrado da altura (em metros).</p>
+            <ul>
+                <li>Menos de 18,5: Abaixo do peso</li>
+                <li>18,5 a 24,9: Peso normal (saudável)</li>
+                <li>25 a 29,9: Sobrepeso</li>
+                <li>30 a 34,9: Obesidade de grau I</li>
+                <li>35 a 39,9: Obesidade de grau II (severa)</li>
+                <li>40 ou mais: Obesidade de grau III (mórbida)</li>
+            </ul>
+        
+            <p>É importante notar que o IMC tem algumas limitações, pois não leva em consideração outros fatores importantes, como a composição corporal, a distribuição de gordura e a massa muscular. Portanto, ele é apenas uma ferramenta inicial de triagem e não deve ser usado isoladamente para avaliar a saúde de alguém. Consultar um profissional de saúde é sempre a melhor abordagem para obter uma avaliação completa da saúde e da condição física.</p>
+        </div>
+
+        <div class="calculadora">
+            <h1>Calcule seu IMC</h1>
+       
+                <label for="">Altura(m)</label>
+                <input type="number" placeholder="Altura em metros" id="heigth">
+
+                <label for="">Peso(Kg)</label>
+                <input type="number" placeholder="Peso em Kg" id="weigth">
+                <input type="button" value="Calcular" onclick="calculaIMC()">
+
+                <p id="result"></p>
+                <p id="categoria"></p>
+       
+        </div>
+    </div>
+</body>
+
+</html>
